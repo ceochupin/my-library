@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя онлайн-библиотека</title>
+</head>
+<body>
+  <header class="header"></header>
+
+  <main class="content">
+    <section class="place"></section>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <dialog class="popup">
+    <div class="popup__close"></div>
+
+    <h3 class="popup__title">Добавить книгу</h3>
+
+    <form class="popup__form" name="add-book">
+      <label class="popup__label">
+        <input type="text" class="popup__input">
+      </label>
+
+      <label class="popup__label">
+        <input type="text" class="popup__input">
+      </label>
+
+      <label class="popup__label">
+        <input type="number" class="popup__input">
+      </label>
+
+      <label class="swither popup__switcher">
+        <span class="switcher__popup-text">Прочитана</span>
+
+        <input type="checkbox" class="switcher__checkbox switcher__checkbox_hidden">
+
+        <span class="swither__checkbox-pseudo"></span>
+      </label>
+
+      <button type="submit" class="popup__button">Добавить в библиотеку</button>
+    </form>
+  </dialog>
+
+  <template id="book-button-add-template">
+    <button class="place__button">
+      <svg></svg>
+
+      <span class="place__button-text"></span>
+    </button>
+  </template>
+
+  <template id="book-template">
+    <article class="book">
+      <div class="book__info-container">
+        <h3 class="book__name"></h3>
+
+        <p class="book__author"></p>
+
+        <p class="book__pages">Страниц: <span class="book__pages-number"></span></p>
+      </div>
+
+      <div class="book__button-container">
+        <label class="swither book__swither">
+          <span class="switcher__book-text">Прочитана</span>
+
+          <input type="checkbox" class="switcher__checkbox switcher__checkbox_hidden">
+
+          <span class="swither__checkbox-pseudo"></span>
+        </label>
+
+        <button class="book__delete">
+          <svg></svg>
+        </button>
+      </div>
+    </article>
+  </template>
+</body>
+</html>

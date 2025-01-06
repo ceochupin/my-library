@@ -1,0 +1,27 @@
+.switcher__checkbox-pseudo {
+  display: grid;
+  inline-size: 42px;
+  block-size: 24px;
+  border-radius: 12px;
+  background: red;
+  transition: 0.3s ease-in;
+}
+
+.switcher__checkbox-pseudo::before {
+  content: '';
+  inline-size: 18px;
+  block-size: 18px;
+  border-radius: 50%;
+  background: rgb(255 255 255);
+  margin: 3px;
+  justify-self: start;
+  transition: 0.3s ease-in;
+}
+
+.switcher__checkbox:checked + .switcher__checkbox-pseudo {
+  background: green;
+}
+
+.switcher__checkbox:checked + .switcher__checkbox-pseudo::before {
+  transform: translateX(18px);
+}

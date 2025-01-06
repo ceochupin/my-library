@@ -22,7 +22,7 @@
   </header>
 
   <main class="content">
-    <section class="place">
+    <section class="place content__place">
       <button
         class="place__button"
         type="button"
@@ -39,7 +39,9 @@
     </section>
   </main>
 
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <h3 class="footer__copyright">Разработано</h3>
+  </footer>
 
   <dialog class="popup">
     <div class="popup__close"></div>
@@ -89,19 +91,19 @@
   </dialog>
 
   <template id="book-template">
-    <article class="book">
+    <article class="book place__book">
       <div class="book__info-container">
         <h3 class="book__name"></h3>
 
         <p class="book__author"></p>
 
         <p class="book__pages">Страниц: 
-          <span class="book__pages-number"></span>
+          <span class="book__pages-count"></span>
         </p>
       </div>
 
       <div class="book__button-container">
-        <label class="swither book__swither">
+        <label class="switcher book__swither">
           <span class="switcher__book-text">Прочитана</span>
 
           <input
@@ -109,7 +111,7 @@
             class="switcher__checkbox switcher__checkbox_hidden"
           >
 
-          <span class="swither__checkbox-pseudo"></span>
+          <span class="switcher__checkbox-pseudo"></span>
         </label>
 
         <button class="book__delete">

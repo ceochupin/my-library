@@ -1,0 +1,8 @@
+@import url('./__info-container/book__info-container.css');
+@import url('./__name/book__name.css');
+@import url('./__author/book__author.css');
+@import url('./__pages/book__pages.css');
+@import url('./__pages-count/book__pages-count.css');
+@import url('./__button-container/book__button-container.css');
+@import url('./__switcher/book__switcher.css');
+@import url('./__delete/book__delete.css');

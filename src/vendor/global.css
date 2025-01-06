@@ -5,9 +5,12 @@
 }
 
 body {
+  display: grid;
+  grid-template-rows: max-content;
   margin-block: 0;
   margin-inline: auto;
   min-inline-size: 375px;
+  min-block-size: 100dvb;
   font-family: 'MuseoSansCyrl';
   font-weight: 300;
   font-size: 18px;

@@ -1,0 +1,18 @@
+@import url('./__logo-container/header__logo-container.css');
+@import url('./__icon-logo/header__icon-logo.css');
+@import url('./__text-logo/header__text-logo.css');
+
+.header {
+  display: grid;
+  block-size: 60px;
+  inline-size: 100%;
+  margin-block-end: 10px;
+  box-shadow: 0 2px 4px rgb( 30 30 30 / 0.5);
+}
+
+@media (width >= 1024px) {
+  .header {
+    block-size: 80px;
+    margin-block-end: 20px;
+  }
+}

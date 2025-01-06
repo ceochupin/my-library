@@ -1,0 +1,17 @@
+.header__logo-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 10px;
+  align-items: center;
+  block-size: 40px;
+  margin-inline: 10px;
+  justify-self: start;
+  align-self: center;
+}
+
+@media (width >= 1024px) {
+  .header__logo-container {
+    block-size: 60px;
+    margin-inline: 20px;
+  }
+}

@@ -5,6 +5,7 @@
   border-radius: 12px;
   background: red;
   transition: 0.3s ease-in;
+  cursor: pointer;
 }
 
 .switcher__checkbox-pseudo::before {

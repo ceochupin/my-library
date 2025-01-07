@@ -4,6 +4,9 @@ import { booksData } from './components/books-data.js';
 
 const bookTemplate = document.querySelector('#book-template');
 const booksPlace = document.querySelector('.place');
+const addBookButton = document.querySelector('.place__button');
+const popupAddBook = document.querySelector('#popupAddBook')
+
 
 const createCard = (bookData) => {
   const bookElement = bookTemplate.content.querySelector('.book').cloneNode(true);
@@ -23,8 +26,17 @@ const createCard = (bookData) => {
 };
 
 
+
 booksData.forEach((book) => {
   const bookElement = createCard(book);
 
   booksPlace.append(bookElement);
-})
+});
+
+const handleAddBookFormSubmit = (event) => {
+  event.preventDefault();
+}
+
+addBookButton.addEventListener('click', () => {
+  popupAddBook.showModal();
+});

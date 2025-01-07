@@ -1,0 +1,7 @@
+.place__button {
+  border: none;
+  display: grid;
+  justify-items: center;
+  cursor: pointer;
+  border-radius: 16px;
+}

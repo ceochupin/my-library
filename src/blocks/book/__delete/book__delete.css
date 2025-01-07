@@ -1,0 +1,8 @@
+.book__delete {
+  margin: 0;
+  padding: 0;
+  inline-size: 32px;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}

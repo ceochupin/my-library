@@ -3,4 +3,13 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+  flex-basis: 250px;
+  background: rgb(160 160 160);
+  border-radius: 16px;
+}
+
+@media (width >= 1024px) {
+  .place__book {
+    padding: 20px;
+  }
 }

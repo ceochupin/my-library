@@ -30,6 +30,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
+          class="place__button-icon"
         >
           <path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M20 18v-3h-2v3h-3v2h3v3h2v-3h3v-2h-3Z"/>
         </svg>
@@ -43,12 +44,19 @@
     <h3 class="footer__copyright">Разработано</h3>
   </footer>
 
-  <dialog class="popup">
+  <dialog
+    class="popup"
+    id="popupAddBook"
+  >
     <div class="popup__close"></div>
 
     <h3 class="popup__title">Добавить книгу</h3>
 
-    <form class="popup__form" name="add-book">
+    <form
+      class="popup__form"
+      name="add-book"
+      method="dialog"
+    >
       <label class="popup__label">
         <input
           type="text"
@@ -70,7 +78,7 @@
         >
       </label>
 
-      <label class="swither popup__switcher">
+      <label class="switcher popup__switcher">
         <span class="switcher__popup-text">Прочитана</span>
 
         <input
@@ -78,7 +86,7 @@
           class="switcher__checkbox switcher__checkbox_hidden"
         >
 
-        <span class="swither__checkbox-pseudo"></span>
+        <span class="switcher__checkbox-pseudo"></span>
       </label>
 
       <button
@@ -103,7 +111,7 @@
       </div>
 
       <div class="book__button-container">
-        <label class="switcher book__swither">
+        <label class="switcher book__switcher">
           <span class="switcher__book-text">Прочитана</span>
 
           <input
@@ -118,6 +126,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
+            class="book__delete-icon"
           >
             <path d="M9 3v1H4v2h1v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1V4h-5V3H9M7 6h10v13H7V6m2 2v9h2V8H9m4 0v9h2V8h-2Z"/>
           </svg>
